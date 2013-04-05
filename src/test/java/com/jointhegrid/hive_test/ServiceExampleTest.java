@@ -30,7 +30,7 @@ public class ServiceExampleTest extends HiveTestService {
   }
 
   public void testExecute() throws Exception {
-    Path p = new Path(this.ROOT_DIR, "afile");
+    Path p = new Path(getDir(this.ROOT_DIR), "afile");
 
     FSDataOutputStream o = this.getFileSystem().create(p);
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(o));
