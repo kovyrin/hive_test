@@ -1,0 +1,8 @@
+# Mac finder artifacts
+.DS_Store
+
+# Maven build dir
+/target
+
+# Test artifacts
+*.log
